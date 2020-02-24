@@ -1,6 +1,6 @@
 # Configurações
 
-:white_check_mark: Settings Vscode
+:white_check_mark: Settings Vscode <br>
 :white_check_mark: Settings Zsh
 
 <footer>
