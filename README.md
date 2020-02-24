@@ -1,7 +1,7 @@
-# Configs pattern
+# Configurações
 
-:construction_worker: Settings Vscode
-
+:white_check_mark: Settings Vscode
+:white_check_mark: Settings Zsh
 
 <footer>
   <p>
