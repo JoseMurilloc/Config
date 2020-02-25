@@ -1,7 +1,7 @@
 # Configurações
 
-:white_check_mark: Settings Vscode <br>
-:white_check_mark: Settings Zsh
+:package: Settings Vscode <br>
+:package: Settings Zsh
 
 <footer>
   <p>
