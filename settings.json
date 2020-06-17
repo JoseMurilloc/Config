@@ -1,48 +1,61 @@
 {
+    "workbench.iconTheme": "material-icon-theme",
     
-  // Mouse zoom
-  "editor.mouseWheelZoom": true,
-  
-  // Configs para a parte de cima colada no topo
-  "window.title": "${rootPath}${separator}${appName}",
-  "window.zoomLevel": 0,
-  "window.titleBarStyle": "custom",
-  "editor.fontSize": 17,
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
-  "editor.fontWeight": "400",
-  "editor.tabSize": 2,
+    // Mouse zoom
+    "editor.mouseWheelZoom": true,
+    
+    // Configs para a parte de cima colada no topo
+    "window.title": "${rootPath}${separator}${appName}",
+    "window.zoomLevel": 0,
+    "window.titleBarStyle": "custom",
+    "editor.fontSize": 17,
+    "editor.fontFamily": "Fira code",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "400",
+    "editor.tabSize": 2,
+    
+    //Gostack
+    
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "editor.parameterHints.enabled": false,
+    "breadcrumbs.enabled": true,
+    "javascript.suggest.autoImports": false,
+    "editor.renderLineHighlight": "all",
+    "explorer.compactFolders": false,
+    //Eslint
+    
+    "[javascript]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true, 
+        }
+    },
+    
+    "[javascriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true, 
+        }
+    },
+    "explorer.confirmDelete": false,
 
-  //Gostack
 
-  "emmet.syntaxProfiles": {
-      "javascript": "jsx"
-  },
-
-  "emmet.includeLanguages": {
-      "javascript": "javascriptreact"
-  },
-
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "editor.parameterHints.enabled": false,
-  "breadcrumbs.enabled": true,
-  "javascript.suggest.autoImports": false,
-  "editor.renderLineHighlight": "gutter",
-  "explorer.compactFolders": false,
-
-  //Eslint
-
-  "[javascript]": {
-      "editor.codeActionsOnSave": {
-          "source.fixAll.eslint": true, 
-      }
-  },
-
-  "[javascriptreact]": {
-      "editor.codeActionsOnSave": {
-          "source.fixAll.eslint": true, 
-      }
-  },
-  "workbench.colorTheme": "Dracula"
+    "material-icon-theme.folders.associations": {
+        "infra": "app",
+        "migrations": "tools",
+        "http": "container",
+        "modules": "components",
+        "fakes": "mock",
+        "repositories": "mappings",
+        "typeorm": "database",
+        "schemas": "class"
+    },
+    "git.autofetch": true,
+    "workbench.colorTheme": "Omni"
 }
