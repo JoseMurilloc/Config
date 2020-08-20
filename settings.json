@@ -1,13 +1,15 @@
 {
     "workbench.iconTheme": "material-icon-theme",
     
+
+    "window.zoomLevel": 1,
+    "window.titleBarStyle": "native", // "native" on Linux, "custom" on Windows
+    "window.menuBarVisibility": "toggle",
+
     // Mouse zoom
     "editor.mouseWheelZoom": true,
     
     // Configs para a parte de cima colada no topo
-    "window.title": "${rootPath}${separator}${appName}",
-    "window.zoomLevel": 0,
-    "window.titleBarStyle": "custom",
     "editor.fontSize": 17,
     "editor.fontFamily": "Victor Mono Thin",
     "editor.fontLigatures": true,
