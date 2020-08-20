@@ -9,10 +9,28 @@
     "window.zoomLevel": 0,
     "window.titleBarStyle": "custom",
     "editor.fontSize": 17,
-    "editor.fontFamily": "Fira code",
+    "editor.fontFamily": "Victor Mono Thin",
     "editor.fontLigatures": true,
     "editor.fontWeight": "400",
     "editor.tabSize": 2,
+
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                  "comment",
+                  "entity.name.type.class", //class names
+                  "keyword", //import, export, return…
+                  "constant", //String, Number, Boolean…, this, super
+                  "storage.modifier", //static keyword
+                  "storage.type.class.js", //class keyword
+                ],
+                "settings": {
+                  "fontStyle": "italic"
+                }
+              }
+        ]
+    },
     
     //Gostack
     
@@ -57,5 +75,4 @@
         "schemas": "class"
     },
     "git.autofetch": true,
-    "workbench.colorTheme": "Omni"
 }
