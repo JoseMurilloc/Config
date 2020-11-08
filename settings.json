@@ -1,17 +1,17 @@
 {
     "workbench.iconTheme": "material-icon-theme",
-    
 
-    "window.zoomLevel": 1,
-    "window.titleBarStyle": "native", // "native" on Linux, "custom" on Windows
+
+    // "window.zoomLevel": 1,
+    // "window.titleBarStyle": "native", // "native" on Linux, "custom" on Windows
     "window.menuBarVisibility": "toggle",
 
     // Mouse zoom
     "editor.mouseWheelZoom": true,
-    
+
     // Configs para a parte de cima colada no topo
     "editor.fontSize": 17,
-    "editor.fontFamily": "Victor Mono Thin",
+    "editor.fontFamily": "Jetbrains mono",
     "editor.fontLigatures": true,
     "editor.fontWeight": "400",
     "editor.tabSize": 2,
@@ -50,6 +50,12 @@
     "javascript.suggest.autoImports": false,
     "editor.renderLineHighlight": "all",
     "explorer.compactFolders": false,
+
+
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true, 
+    },
+
     //Eslint
     
     "[javascript]": {
@@ -65,16 +71,35 @@
     },
     "explorer.confirmDelete": false,
 
-
     "material-icon-theme.folders.associations": {
         "infra": "app",
-        "migrations": "tools",
-        "http": "container",
-        "modules": "components",
-        "fakes": "mock",
-        "repositories": "mappings",
+        "entities": "class",
+        "schemas": "class",
         "typeorm": "database",
-        "schemas": "class"
+        "repositories": "mappings",
+        "http": "container",
+        "migrations": "tools",
+        "modules": "components",
+        "implementations": "core",
+        "dtos": "typescript",
+        "fakes": "mock",
+        "websockets": "pipe",
+        "protos": "pipe",
+        "grpc": "pipe"
     },
+    
+    "material-icon-theme.files.associations": {
+        "ormconfig.json": "database",
+        "tsconfig.json": "tune",
+        "*.proto": "3d"
+    },
+
     "git.autofetch": true,
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "workbench.sideBar.location": "left",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "explorer.confirmDragAndDrop": false,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Omni",
 }
