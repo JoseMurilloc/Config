@@ -1,38 +1,37 @@
 {
-    
+
     "explorer.enableDragAndDrop": true,
 
+    "convert-px-to-rem.base-px": 15,
+    "convert-px-to-rem.precision": 4,
+
     "workbench.colorCustomizations": {
-        "editorCursor.foreground": "#ff3bad",
-        "terminalCursor.foreground": "#ff00b3",
+      "editorCursor.foreground": "#f637b7",
+      "terminalCursor.foreground": "#ff00b3",
     },
 
-    "emmet.syntaxProfiles": { "javascript": "jsx" },
-    "emmet.includeLanguages": { "javascript": "javascriptreact" },
-  
+    // "eslint.validate": ["javascript", "typescript", "typescriptreact"], 
 
-    // "eslint.validate": ["javascript", "typescript", "typescriptreact"],
-
-
-    "editor.cursorWidth": 3,
+    "editor.cursorStyle": "block-outline",
+    "editor.cursorWidth": 1,
     "workbench.iconTheme": "material-icon-theme",
     // Configs para a parte de cima colada no topo
     // "window.titleBarStyle": "native", // "native" on Linux, "custom" on Windows
 
-    
+
 
 
     "window.menuBarVisibility": "toggle",
     "editor.mouseWheelZoom": true,
     "editor.fontSize": 18,
     // "editor.fontFamily": "Jetbrains Mono",
-    // "editor.fontFamily": "'Victor Mono Medium'",
-    "editor.fontFamily": "Dank Mono",
     // "editor.fontFamily": "'Fira Code iScript'",
-    
-    "editor.lineHeight": 30,
+    // "editor.fontFamily": "'Fira Code'",
+    "editor.fontFamily": "Dank Mono",
+
     "editor.fontLigatures": true,
-    "editor.fontWeight": "600",
+    "editor.lineHeight": 35,
+    "editor.fontWeight": "400",
     "editor.tabSize": 2,
     "javascript.updateImportsOnFileMove.enabled": "never",
     "editor.parameterHints.enabled": false,
@@ -72,7 +71,8 @@
         "deps": "Download",
         "priv": "Guard",
         "interfaces": "Less",
-        "share": "Export"
+        "share": "Export",
+        "types": "tools"
     },
     "material-icon-theme.files.associations": {
         "*.controller.ts": "nest-controller",
@@ -114,8 +114,7 @@
     "terminal.integrated.cursorStyle": "block",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "bold",
-    // "terminal.integrated.fontFamily": "'DroidSansMono Nerd Font'",
-    "terminal.integrated.fontFamily": "'Fira Code iScript'",
+    "terminal.integrated.fontFamily": "'DroidSansMono Nerd Font'",
 
     "emmet.syntaxProfiles": { "javascript": "jsx" },
     "emmet.includeLanguages": {
@@ -125,7 +124,7 @@
     "editor.wordWrap": "on",
     "vscodeGoogleTranslate.preferredLanguage": "English",
     "terminal.integrated.cursorBlinking": true,
-    "editor.cursorBlinking": "phase",
+    "editor.cursorBlinking": "smooth",
     "workbench.activityBar.visible": true,
     "terminal.integrated.rendererType": "dom",
     "material-icon-theme.folders.color": "#65309b",
@@ -134,8 +133,6 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "tabnine.experimentalAutoImports": true,
-    "workbench.colorTheme": "Omni",
-    "window.zoomLevel": 0.8,
 
     "editor.tokenColorCustomizations": {
         "textMateRules": [
@@ -147,7 +144,7 @@
               "meta.diff.header.to-file"
             ],
             "settings": {
-              "fontStyle": "italic"
+              "fontStyle": "italic",
             }
           },
           {
@@ -170,7 +167,9 @@
           },
           {
             "scope": "variable",
-            "settings": {}
+            "settings": {
+              "fontStyle": "italic"              
+            }
           },
           {
             "scope": ["punctuation.accessor", "keyword"],
@@ -264,9 +263,6 @@
           {
             "scope": [
               "keyword.operator.comparison",
-              "keyword.control.flow.js",
-              "keyword.control.flow.ts",
-              "keyword.control.flow.tsx",
               "keyword.control.loop.js",
               "keyword.control.loop.ts",
               "keyword.control.import.js",
@@ -280,7 +276,7 @@
               "keyword.operator.expression.instanceof.tsx"
             ],
             "settings": {
-              "fontStyle": "italic"
+              "fontStyle": "italic bold"
             }
           },
           {
@@ -356,7 +352,29 @@
             "settings": {
               "fontStyle": "bold"
             }
+          },
+          {
+            "scope": [
+              "support.class.component.tsx",
+              "support.class.component.js",
+            ],
+            "settings": {
+              "fontStyle": "italic bold"
+            }
+          },
+          {
+            "scope": [
+              "keyword.control.flow.js",
+              "keyword.control.flow.ts",
+              "keyword.control.flow.tsx",
+            ],
+            "settings": {
+              "fontStyle": "italic"
+            }
           }
         ]
-    }
+    },
+    "window.zoomLevel": 0.8,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.colorTheme": "Omni"
 }
