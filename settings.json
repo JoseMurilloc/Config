@@ -1,380 +1,407 @@
 {
 
-    "explorer.enableDragAndDrop": true,
+  "explorer.enableDragAndDrop": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
 
-    "convert-px-to-rem.base-px": 15,
-    "convert-px-to-rem.precision": 4,
+  "convert-px-to-rem.base-px": 15,
+  "convert-px-to-rem.precision": 4,
 
-    "workbench.colorCustomizations": {
-      "editorCursor.foreground": "#f637b7",
-      "terminalCursor.foreground": "#ff00b3",
-    },
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#f637b7",
+    "terminalCursor.foreground": "#ff00b3",
+  },
 
-    // "eslint.validate": ["javascript", "typescript", "typescriptreact"], 
+  // "eslint.validate": ["javascript", "typescript", "typescriptreact"],
 
-    "editor.cursorStyle": "block-outline",
-    "editor.cursorWidth": 1,
-    "workbench.iconTheme": "material-icon-theme",
-    // Configs para a parte de cima colada no topo
-    // "window.titleBarStyle": "native", // "native" on Linux, "custom" on Windows
-
-
+  "editor.cursorStyle": "line-thin",
+  "editor.cursorWidth": 1,
+  "workbench.iconTheme": "material-icon-theme",
+  // Configs para a parte de cima colada no topo
+  // "window.titleBarStyle": "native", // "native" on Linux, "custom" on Windows
 
 
-    "window.menuBarVisibility": "toggle",
-    "editor.mouseWheelZoom": true,
-    "editor.fontSize": 18,
-    // "editor.fontFamily": "Jetbrains Mono",
-    // "editor.fontFamily": "'Fira Code iScript'",
-    // "editor.fontFamily": "'Fira Code'",
-    "editor.fontFamily": "Dank Mono",
 
-    "editor.fontLigatures": true,
-    "editor.lineHeight": 35,
-    "editor.fontWeight": "400",
-    "editor.tabSize": 2,
-    "javascript.updateImportsOnFileMove.enabled": "never",
-    "editor.parameterHints.enabled": false,
-    "breadcrumbs.enabled": true,
-    "editor.renderLineHighlight": "gutter",
-    "explorer.compactFolders": false,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
-    },
-    //Eslint
-    "[javascript]": {
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true,
-        }
-    },
-    "[javascriptreact]": {
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true,
-        }
-    },
-    "explorer.confirmDelete": false,
-    "material-icon-theme.folders.associations": {
-        "infra": "app",
-        "entities": "class",
-        "schemas": "class",
-        "typeorm": "database",
-        "repositories": "mappings",
-        "http": "container",
-        "migrations": "tools",
-        "modules": "components",
-        "implementations": "core",
-        "dtos": "typescript",
-        "fakes": "mock",
-        "websockets": "pipe",
-        "protos": "pipe",
-        "grpc": "pipe",
-        "deps": "Download",
-        "priv": "Guard",
-        "interfaces": "Less",
-        "share": "Export",
-        "types": "tools"
-    },
-    "material-icon-theme.files.associations": {
-        "*.controller.ts": "nest-controller",
-        "*.module.ts": "nest-module",
-        "*.service.ts": "nest-service",
-        "*.middleware.ts": "nest-middleware",
-        "*.filter.ts": "nest-filter",
-        "*.pipe.ts": "nest-pipe",
-        "*.gateway.ts": "nest-gateway",
-        "*.decorator.ts": "nest-decorator",
-        "*.resolver.ts": "nest-resolver",
-        "*.input.ts": "nest-input",
-        "*.guard.ts": "nest-guard",
-        "ormconfig.json": "database",
-        "tsconfig.json": "tune",
-        "*.proto": "3d",
-        "*.beam": "Assembly",
-        "styles.ts": "sass",
-        "global.ts": "sass",
-        "router.ex": "Routing"
-    },
-    "git.autofetch": true,
-    "typescript.updateImportsOnFileMove.enabled": "never",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "explorer.confirmDragAndDrop": false,
-    "sync.gist": "accd5bcc44386b0928938f95727bec46",
-    "files.exclude": {
-        "**/.git": true,
-        "**/.next": true,
-        "**/.DS_Store": true,
-        "**/node_modules": true,
-        "**/deps": true,
-        "node_modules": true,
-        ".directory": true,
-        "_build": true,
-        ".elixir_ls": true
-    },
-    "terminal.integrated.cursorStyle": "block",
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.fontWeight": "bold",
-    "terminal.integrated.fontFamily": "'DroidSansMono Nerd Font'",
 
-    "emmet.syntaxProfiles": { "javascript": "jsx" },
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    "extensions.autoUpdate": true,
-    "editor.wordWrap": "on",
-    "vscodeGoogleTranslate.preferredLanguage": "English",
-    "terminal.integrated.cursorBlinking": true,
-    "editor.cursorBlinking": "smooth",
-    "workbench.activityBar.visible": true,
-    "terminal.integrated.rendererType": "dom",
-    "material-icon-theme.folders.color": "#65309b",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "tabnine.experimentalAutoImports": true,
+  "window.menuBarVisibility": "toggle",
+  "editor.mouseWheelZoom": true,
+  "editor.fontSize": 20,
+  // "editor.fontFamily": "Jetbrains Mono",
+  "editor.fontFamily": "'Fira Code iScript'",
+  // "editor.fontFamily": "'Fira Code'",
+  // "editor.fontFamily": "Dank Mono",
 
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-          {
-            "scope": [
-              "markup.changed",
-              "meta.diff.header.git",
-              "meta.diff.header.from-file",
-              "meta.diff.header.to-file"
-            ],
-            "settings": {
-              "fontStyle": "italic",
-            }
-          },
-          {
-            "scope": "markup.deleted.diff",
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": "markup.inserted.diff",
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": "comment",
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": "variable",
-            "settings": {
-              "fontStyle": "italic"              
-            }
-          },
-          {
-            "scope": ["punctuation.accessor", "keyword"],
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": [
-              "storage",
-              "meta.var.expr",
-              "meta.class meta.method.declaration meta.var.expr storage.type.js",
-              "storage.type.property.js",
-              "storage.type.property.ts",
-              "storage.type.property.tsx"
-            ],
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": "entity.other.inherited-class",
-            "settings": {}
-          },
-          {
-            "scope": "entity.name.function",
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": "entity.other.attribute-name",
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": "keyword.operator",
-            "settings": {
-              "fontStyle": ""
-            }
-          },
-          {
-            "scope": "keyword.operator.relational",
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": "meta.brace",
-            "settings": {}
-          },
-          {
-            "scope": "meta.delimiter.period",
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": "keyword.other.unit",
-            "settings": {}
-          },
-          {
-            "scope": "meta.selector",
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": "meta.property-name",
-            "settings": {}
-          },
-          {
-            "scope": ["entity.name.tag.doctype", "meta.tag.sgml.doctype"],
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": ["variable.other.object.property"],
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": ["entity.name.function"],
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": [
-              "keyword.operator.comparison",
-              "keyword.control.loop.js",
-              "keyword.control.loop.ts",
-              "keyword.control.import.js",
-              "keyword.control.import.ts",
-              "keyword.control.import.tsx",
-              "keyword.control.from.js",
-              "keyword.control.from.ts",
-              "keyword.control.from.tsx",
-              "keyword.operator.instanceof.js",
-              "keyword.operator.expression.instanceof.ts",
-              "keyword.operator.expression.instanceof.tsx"
-            ],
-            "settings": {
-              "fontStyle": "italic bold"
-            }
-          },
-          {
-            "scope": "italic",
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": "bold",
-            "settings": {
-              "fontStyle": "bold"
-            }
-          },
-          {
-            "scope": "quote",
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": "punctuation.definition.tag.html",
-            "settings": {}
-          },
-          {
-            "scope": "meta.tag.sgml.doctype.html",
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": "variable.other.object.js",
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": "markup.italic.markdown",
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": "markup.quote.markdown",
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": "keyword.control",
-            "settings": {
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "scope": "bold",
-            "settings": {
-              "fontStyle": "bold"
-            }
-          },
-          {
-            "scope": [
-              "punctuation.separator.hash.cs",
-              "keyword.preprocessor.region.cs",
-              "keyword.preprocessor.endregion.cs"
-            ],
-            "settings": {
-              "fontStyle": "bold"
-            }
-          },
-          {
-            "scope": "markup.bold.markdown",
-            "settings": {
-              "fontStyle": "bold"
-            }
-          },
-          {
-            "scope": [
-              "support.class.component.tsx",
-              "support.class.component.js",
-            ],
-            "settings": {
-              "fontStyle": "italic bold"
-            }
-          },
-          {
-            "scope": [
-              "keyword.control.flow.js",
-              "keyword.control.flow.ts",
-              "keyword.control.flow.tsx",
-            ],
-            "settings": {
-              "fontStyle": "italic"
-            }
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 35,
+  "editor.fontWeight": "400",
+  "editor.tabSize": 2,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "editor.parameterHints.enabled": false,
+  "breadcrumbs.enabled": true,
+  "editor.renderLineHighlight": "gutter",
+  "explorer.compactFolders": false,
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+  },
+  //Eslint
+  "[javascript]": {
+      "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true,
+      }
+  },
+  "[javascriptreact]": {
+      "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true,
+      }
+  },
+  "explorer.confirmDelete": false,
+  "material-icon-theme.folders.associations": {
+      "infra": "app",
+      "entities": "class",
+      "schemas": "class",
+      "typeorm": "database",
+      "repositories": "mappings",
+      "http": "container",
+      "migrations": "tools",
+      "modules": "components",
+      "implementations": "core",
+      "dtos": "typescript",
+      "fakes": "mock",
+      "websockets": "pipe",
+      "protos": "pipe",
+      "grpc": "pipe",
+      "deps": "Download",
+      "priv": "Guard",
+      "interfaces": "Less",
+      "share": "Export",
+      "types": "tools"
+  },
+  "material-icon-theme.files.associations": {
+      "*.controller.ts": "nest-controller",
+      "*.module.ts": "nest-module",
+      "*.service.ts": "nest-service",
+      "*.middleware.ts": "nest-middleware",
+      "*.filter.ts": "nest-filter",
+      "*.pipe.ts": "nest-pipe",
+      "*.gateway.ts": "nest-gateway",
+      "*.decorator.ts": "nest-decorator",
+      "*.resolver.ts": "nest-resolver",
+      "*.input.ts": "nest-input",
+      "*.guard.ts": "nest-guard",
+      "ormconfig.json": "database",
+      "tsconfig.json": "tune",
+      "*.proto": "3d",
+      "*.beam": "Assembly",
+      "styles.ts": "sass",
+      "global.ts": "sass",
+      "router.ex": "Routing"
+  },
+  "git.autofetch": true,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "explorer.confirmDragAndDrop": false,
+  "sync.gist": "accd5bcc44386b0928938f95727bec46",
+  "files.exclude": {
+      "**/.git": true,
+      "**/.next": true,
+      "**/.DS_Store": true,
+      "**/node_modules": true,
+      "**/deps": true,
+      "node_modules": true,
+      ".directory": true,
+      "_build": true,
+      ".elixir_ls": true
+  },
+  "terminal.integrated.cursorStyle": "block",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "bold",
+  "terminal.integrated.fontFamily": "'DroidSansMono Nerd Font'",
+
+  "emmet.syntaxProfiles": { "javascript": "jsx" },
+  "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+  },
+  "extensions.autoUpdate": true,
+  "editor.wordWrap": "on",
+  "vscodeGoogleTranslate.preferredLanguage": "English",
+  "terminal.integrated.cursorBlinking": true,
+  "editor.cursorBlinking": "smooth",
+  "workbench.activityBar.visible": true,
+  "terminal.integrated.rendererType": "dom",
+  "material-icon-theme.folders.color": "#65309b",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "tabnine.experimentalAutoImports": true,
+
+  "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": [
+            "markup.changed",
+            "meta.diff.header.git",
+            "meta.diff.header.from-file",
+            "meta.diff.header.to-file"
+          ],
+          "settings": {
+            "fontStyle": "italic",
           }
-        ]
-    },
-    "window.zoomLevel": 0.8,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.colorTheme": "Omni"
+        },
+        {
+          "scope": "markup.deleted.diff",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "markup.inserted.diff",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "comment",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "variable",
+          "settings": {
+            "fontStyle": "normal"
+          }
+        },
+        {
+          "scope": ["punctuation.accessor", "keyword"],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "storage",
+            "meta.var.expr",
+            "meta.class meta.method.declaration meta.var.expr storage.type.js",
+            "storage.type.property.js",
+            "storage.type.property.ts",
+            "storage.type.property.tsx"
+          ],
+          "settings": {
+            "fontStyle": "normal"
+          }
+        },
+        {
+          "scope": "entity.other.inherited-class",
+          "settings": {}
+        },
+        {
+          "scope": "entity.name.function",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "entity.other.attribute-name",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "keyword.operator",
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "meta.brace",
+          "settings": {}
+        },
+        {
+          "scope": "meta.delimiter.period",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "keyword.other.unit",
+          "settings": {}
+        },
+        {
+          "scope": "meta.selector",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "meta.property-name",
+          "settings": {}
+        },
+        {
+          "scope": ["entity.name.tag.doctype", "meta.tag.sgml.doctype"],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": ["variable.other.object.property"],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": ["entity.name.function"],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "keyword.operator.comparison",
+            "keyword.control.loop.js",
+            "keyword.control.loop.ts",
+            "keyword.control.import.js",
+            "keyword.control.import.ts",
+            "keyword.control.import.tsx",
+            "keyword.control.from.js",
+            "keyword.control.from.ts",
+            "keyword.control.from.tsx",
+            "keyword.operator.instanceof.js",
+            "keyword.operator.expression.instanceof.ts",
+            "keyword.operator.expression.instanceof.tsx"
+          ],
+          "settings": {
+            "fontStyle": "italic bold"
+          }
+        },
+        {
+          "scope": "italic",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "bold",
+          "settings": {
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "quote",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "punctuation.definition.tag.html",
+          "settings": {}
+        },
+        {
+          "scope": "meta.tag.sgml.doctype.html",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "variable.other.object.js",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "markup.italic.markdown",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "markup.quote.markdown",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "keyword.control",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "bold",
+          "settings": {
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": [
+            "punctuation.separator.hash.cs",
+            "keyword.preprocessor.region.cs",
+            "keyword.preprocessor.endregion.cs"
+          ],
+          "settings": {
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "markup.bold.markdown",
+          "settings": {
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": [
+            "support.class.component.tsx",
+            "support.class.component.js",
+          ],
+          "settings": {
+            "fontStyle": "italic bold"
+          }
+        },
+        {
+          "scope": [
+            "keyword.control.flow.js",
+            "keyword.control.flow.ts",
+            "keyword.control.flow.tsx",
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "keyword.operator.relational",
+            "keyword.operator.arithmetic",
+            "storage.type.function.arrow",
+            "keyword.operator.comparison",
+            "meta.parameters",
+            "punctuation.section.embedded",
+            "punctuation.terminator.statement",
+            "meta.brace.round.tsx"
+          ],
+          "settings": {
+            "fontStyle": "normal"
+          }
+        },
+        {
+          "scope": [
+            "punctuation.definition.block"
+          ],
+          "settings": {
+            "fontStyle": "normal"
+          }
+        },
+        {
+          "scope": [
+            "entity.name.type.alias",
+            "entity.name.type.interface"
+          ],
+          "settings": {
+            "fontStyle": "underline bold italic"
+          }
+        }
+      ]
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.colorTheme": "Omni"
 }
