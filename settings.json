@@ -1,35 +1,42 @@
 {
+  // "editor.experimental.stickyScroll.enabled": true,
   "styledComponentsExtractor.addImportStatement": true,
   "explorer.enableDragAndDrop": true,
   // "files.autoSave": "afterDelay",
   // "files.autoSaveDelay": 1000,
   "convert-px-to-rem.base-px": 10,
   "convert-px-to-rem.precision": 4,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.guides.highlightActiveBracketPair": true,
   "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#FF5FBA",
-    "terminalCursor.foreground": "#FF5FBA",
-    "textLink.foreground": "#FF79C6",
-    "textLink.activeForeground": "#FF5FBA",
+    "editorCursor.foreground": "#C586C0",
+    "textLink.foreground": "#C586C0",
+    "textLink.activeForeground": "#C586C0",
   },
-  // "eslint.validate": ["javascript", "typescript", "typescriptreact"],
   "editor.cursorStyle": "line",
-  "editor.cursorWidth": 2,
-  // Configs para a parte de cima colada no topo
-  "window.titleBarStyle": "native", // "native" on Linux, "custom" on Windows
-  "window.menuBarVisibility": "toggle",
-  "editor.mouseWheelZoom": true,
-  // "editor.fontFamily": "'Cascadia Code PL Semilight', monospace",
-  // "editor.fontFamily": "Dank Mono",
-  // "editor.fontFamily": "'Fira Code iScript'",
-  // "editor.fontFamily": "Droid Sans Mono",
-  "editor.fontFamily": "'Fira Code'",
-  "editor.fontSize": 15,
-  "editor.lineHeight": 1.5,
-  "editor.fontLigatures": true,
-  "editor.letterSpacing": 0.1,
-  "editor.fontWeight": "400",
-  "editor.tabSize": 2,
+  "editor.cursorWidth": 1,
 
+  // Font code
+  "window.titleBarStyle": "custom", // "native" on Linux, "custom" on Windows
+  "window.menuBarVisibility": "compact",
+  "editor.mouseWheelZoom": true,
+  "editor.fontFamily": "Jetbrains Mono", // Jetbrains Mono Or Fira code
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.lineHeight": 2,
+  "editor.letterSpacing": 0.2,
+  "editor.fontWeight": "700",
+
+
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "html",
+    "typescriptreact"
+  ],
   "javascript.updateImportsOnFileMove.enabled": "never",
   "editor.parameterHints.enabled": false,
   "breadcrumbs.enabled": true,
@@ -38,19 +45,16 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
   },
-  //Eslint
-  // "[javascript]": {
-  //   "editor.codeActionsOnSave": {
-  //     "source.fixAll.eslint": true,
-  //   }
-  // },
-  // "[javascriptreact]": {
-  //   "editor.codeActionsOnSave": {
-  //     "source.fixAll.eslint": true,
-  //   }
-  // },
+  // Git integration settings
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.autorefresh": true,  
+  
+
   "explorer.confirmDelete": false,
   "material-icon-theme.folders.associations": {
+    "Chat": "",
     "Form": "Meta",
     "infra": "app",
     "entities": "class",
@@ -73,7 +77,7 @@
     "types": "tools",
     "ui": "Content",
     ".jest": "Test",
-    "atomic": "Shader"
+    "atomic": "Shader",
   },
   "material-icon-theme.files.associations": {
     ".ruby-version": "Ruby",
@@ -99,7 +103,6 @@
     "router.ex": "Routing",
     "*.run": "Assembly",
   },
-  "git.autofetch": true,
   "typescript.updateImportsOnFileMove.enabled": "never",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -111,7 +114,6 @@
     "**/.DS_Store": true,
     "**/node_modules": true,
     "**/deps": true,
-    // "**/vendor/**": true,
     "node_modules": true,
     ".directory": true,
     "_build": true,
@@ -121,8 +123,9 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.cursorWidth": 1,
+  "terminal.integrated.lineHeight": 1.4,
   "terminal.integrated.fontWeight": "bold",
-  "terminal.integrated.fontFamily": "'DroidSansMono Nerd Font Mono', 'Fira Code Iscript'",
+  "terminal.integrated.fontFamily": "'Fira code','DroidSansMono Nerd Font Mono', 'Fira Code Iscript'",
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },
@@ -130,20 +133,110 @@
     "javascript": "javascriptreact"
   },
   "extensions.autoUpdate": true,
-  "editor.wordWrap": "off",
   "editor.minimap.enabled": false,
   "vscodeGoogleTranslate.preferredLanguage": "English",
   "terminal.integrated.cursorBlinking": true,
-  "editor.cursorBlinking": "phase",
+  "editor.cursorBlinking": "blink",
   "terminal.integrated.rendererType": "dom",
-  "material-icon-theme.folders.color": "#E1AAFA",
+  "material-icon-theme.folders.color": "#C586C0",
   "liveServer.settings.donotShowInfoMsg": true,
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "tabnine.experimentalAutoImports": true,
   "editor.tokenColorCustomizations": {
+    "[Community Material Theme Ocean High Contrast]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "keyword.control.flow.js",
+            "keyword.control.flow.ts",
+            "keyword.control.flow.tsx",
+            "keyword.control.conditional"
+          ],
+          "settings": {
+            "foreground": "#C293E1",
+            "fontStyle": "italic",
+          }
+        },
+        {
+          "scope": ["punctuation.support.type.property-name.begin.json.comments", "punctuation.support.type.property-name.end.json.comments",
+        "support.type.property-name.json.comments", "keyword.control.switch"],
+          "settings": {
+            "foreground": "#c293e1",
+          }
+        },
+        {
+          "scope": [
+            "punctuation.definition.string.end",
+            "punctuation.definition.string.begin",
+          ],
+          "settings": {
+            "foreground": "#C3E88D",
+          }
+        },
+        {
+          "scope": [
+            "support.type.property-name.css",
+            "meta.property-name.scss",
+            "source.css.scss",
+          ],
+          "settings": {
+            "foreground": "#E5C07B",
+          }
+        },
+        {
+          "scope": [
+            "variable.other.readwrite.alias",
+            "meta.object-literal.key",
+            "variable.other.object",
+            "variable.other.readwrite",
+            "meta.jsx.children",
+            "punctuation.definition.tag.begin",
+            "punctuation.definition.tag.end",
+            "punctuation.definition.tag.begin.html",
+            "punctuation.definition.tag.end.html",
+            "support.variable.property",
+            "text.html.derivative",
+            "variable.object.property"
+          ],
+          "settings": {
+            "foreground": "#fff"
+          }
+        },
+        {
+          "scope": [
+            "keyword.operator.comparison",
+            "keyword.control.loop.js",
+            "keyword.control.loop.ts",
+            "keyword.control.import.js",
+            "keyword.control.import.ts",
+            "keyword.control.import.tsx",
+            "keyword.control.from.js",
+            "keyword.control.from.ts",
+            "keyword.control.from.tsx",
+            "keyword.control.export",
+            "keyword.operator.instanceof.js",
+            "keyword.operator.expression.instanceof.ts",
+            "keyword.operator.expression.instanceof.tsx",
+            "variable.other.property"
+          ],
+          "settings": {
+            "fontStyle": "normal",
+            "foreground": "#C792EA"
+          }
+        },
+      ]
+    },
     "textMateRules": [
+      {
+        "scope": [
+          "keyword.other.definition.ini"
+        ],
+        "settings": {
+          "fontStyle": "normal",
+        }
+      },
       {
         "scope": [
           "markup.changed",
@@ -182,7 +275,7 @@
       {
         "scope": [
           "punctuation.accessor",
-          "keyword"
+          "keyword",
         ],
         "settings": {
           "fontStyle": "italic"
@@ -280,7 +373,8 @@
           "keyword.control.export",
           "keyword.operator.instanceof.js",
           "keyword.operator.expression.instanceof.ts",
-          "keyword.operator.expression.instanceof.tsx"
+          "keyword.operator.expression.instanceof.tsx",
+          "variable.other.property"
         ],
         "settings": {
           "fontStyle": "normal",
@@ -356,21 +450,12 @@
       },
       {
         "scope": [
-          "support.class.component.tsx",
-          "support.class.component.js",
-        ],
-        "settings": {
-          "fontStyle": "normal",
-        }
-      },
-      {
-        "scope": [
           "keyword.control.flow.js",
           "keyword.control.flow.ts",
           "keyword.control.flow.tsx",
         ],
         "settings": {
-          "fontStyle": "italic"
+          "fontStyle": "normal",
         }
       },
       {
@@ -405,51 +490,12 @@
           "entity.name.type.class"
         ],
         "settings": {
-          "fontStyle": "italic bold"
+          "fontStyle": "italic"
         }
       },
-      {
-        "scope": [
-          "keyword.control.elixir",
-          "keyword.control.module.elixir",
-        ],
-        "settings": {
-          "fontStyle": "italic bold"
-        }
-      },
-      {
-        // 🍥 theme
-        "scope": [
-          "support.type.property-name.css",
-          "meta.property-name.scss",
-          "source.css.scss",
-        ],
-        "settings": {
-          // "foreground": "#E06C75",
-          // "foreground": "#E5C07B",
-          // "foreground": "#A277FF",
-          // "foreground": "#56B6C2",
-          // "fontStyle": "normal"
-        }
-      },
-      {
-        // 🍥 theme
-        // "scope": [
-        //   "editor.background",
-        // ],
-        // "settings": {
-        //   "foreground": "#01121F",
-        // }
-      }
     ]
   },
   "diffEditor.ignoreTrimWhitespace": false,
-  "elixirLS.suggestSpecs": false,
-  "customizeUI.titleBar": "inline",
-  "customizeUI.activityBar": "bottom",
-  "customizeUI.stylesheet": {
-    ".monaco-icon-label:before": "background-size: 16px",
-  },
   "cSpell.userWords": [
     "KG",
     "whatsapp"
@@ -463,11 +509,54 @@
   "terminal.integrated.defaultProfile.windows": "zsh",
   "workbench.editor.untitled.hint": "hidden",
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.iconTheme": "material-icon-theme",
-  "blockman.n01LineHeight": 0,
-  "diffEditor.wordWrap": "off",
+  "diffEditor.wordWrap": "on",
   "editor.guides.indentation": false,
-  "editor.guides.bracketPairs": false,
   "editor.inlayHints.enabled": false,
-  "window.zoomLevel": -1,
+  "editor.language.colorizedBracketPairs": [],
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.indent": 20,
+  "editor.tabSize": 2,
+  "customizeUI.activityBar": "bottom",
+  "customizeUI.activityBarHideSettings": true,
+  "customizeUI.titleBar": "inline",
+  "customizeUI.stylesheet": {
+    ".monaco-workbench .activitybar .menubar, .monaco-workbench .activitybar .menubar.compact .toolbar-toggle-more": "display: none;",
+    ".monaco-pane-view .monaco-split-view2.vertical>.monaco-scrollable-element.mac": "height: calc(100% - 90px) !important;",
+    ".monaco-split-view2.vertical>.monaco-scrollable-element.mac>.split-view-container>.split-view-view.visible>.part.sidebar.left>.content": "height: 100vh !important",
+    "div.monaco-grid-view > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div.split-view-view.visible > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(2)": "bottom: 0px !important; top: unset !important; height: 45px !important",
+    ".monaco-pane-view .monaco-scrollable-element.mac > div.split-view-container > div:not(:first-child)": "transform: translateY(-20px) !important",
+    ".part.activitybar.left": "background-color: unset !important",
+    "body.activity-bar-at-bottom .monaco-workbench .activitybar > .content .composite-bar": "margin-left: 0 !important",
+    "body.inline-title-bar .part>.title>.title-actions .action-label": "min-width: unset !important",
+    ".monaco-workbench .part.sidebar>.title>.title-label h2": "display: none;",
+    ".part.activitybar.left.bordered": "border: 1px solid transparent!important",
+    ".activitybar .composite-bar > .monaco-action-bar": "position: absolute; top: -12px; left: 0; right: 0; margin: 0px 30px 0px 30px",
+    ".activitybar .composite-bar > .monaco-action-bar > .actions-container": "justify-content: space-evenly; max-width: 450px; border: 1px solid #ffffff1c; border-radius: 6px; background-color: #343746",
+    ".pane-header": "padding-left: 10px;",
+    "body.activity-bar-at-bottom .monaco-workbench .activitybar > .content": "flex-direction: column !important",
+    ".monaco-split-view2.vertical>.monaco-scrollable-element>.split-view-container>.split-view-view": "background-color: #21222c"
+  },
+  "workbench.statusBar.visible": true,
+  "editor.accessibilitySupport": "off",
+  "workbench.colorTheme": "Dracula",
 }
+
+
+// Material Ocean
+// ".activitybar .composite-bar > .monaco-action-bar > .actions-container": "justify-content: space-evenly; max-width: 450px; border: 1px solid #ffffff1c; border-radius: 6px; background-color: #0F111A",
+// ".pane-header": "padding-left: 10px;",
+// "body.activity-bar-at-bottom .monaco-workbench .activitybar > .content": "flex-direction: column !important",
+// ".monaco-split-view2.vertical>.monaco-scrollable-element>.split-view-container>.split-view-view": "background-color: #090B10"
+
+// Dracula UICustom
+// ".activitybar .composite-bar > .monaco-action-bar > .actions-container": "justify-content: space-evenly; max-width: 450px; border: 1px solid #ffffff1c; border-radius: 6px; background-color: #343746",
+// ".pane-header": "padding-left: 10px;",
+// "body.activity-bar-at-bottom .monaco-workbench .activitybar > .content": "flex-direction: column !important",
+// ".monaco-split-view2.vertical>.monaco-scrollable-element>.split-view-container>.split-view-view": "background-color: #21222c"
+
+// Dark + UICustom
+// ".activitybar .composite-bar > .monaco-action-bar > .actions-container": "justify-content: space-evenly; max-width: 450px; border: 1px solid #ffffff1c; border-radius: 6px; background-color: #333333",
+// ".pane-header": "padding-left: 10px;",
+// "body.activity-bar-at-bottom .monaco-workbench .activitybar > .content": "flex-direction: column !important",
+// ".monaco-split-view2.vertical>.monaco-scrollable-element>.split-view-container>.split-view-view": "background-color: #252526"
+
